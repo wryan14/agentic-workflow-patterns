@@ -42,7 +42,7 @@ See [PATTERNS.md](PATTERNS.md) for detailed documentation of each pattern.
 
 **Output:**
 - [YouTube Channel](https://www.youtube.com/@bibliothecarius-modernus) — 200+ videos
-- [Blog](https://bibliothecarius-modernus.github.io) — ~2,000 monthly readers
+- [Blog](https://bibliothecarius-modernus.github.io) — Active readership
 - [Translation Corpus](https://github.com/wryan14/Latin-Patristic-Texts) — Open source translations
 
 **Whitepaper:** [DOI 10.5281/zenodo.18002473](https://doi.org/10.5281/zenodo.18002473)
