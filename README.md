@@ -4,12 +4,7 @@ Architectural patterns for constraining AI agent behavior, extracted from a prod
 
 ## The Problem
 
-AI agents are unreliable across sessions. They:
-- Skip steps or forget context between sessions
-- Produce inconsistent output quality
-- Conflate "understood the task" with "completed the task"
-- Make irreversible mistakes before human review
-- Hallucinate when they should follow explicit instructions
+AI agents are unreliable across sessions. They skip steps, forget context, and produce inconsistent output. They conflate "understood the task" with "completed the task," making irreversible mistakes before human review. When they should follow explicit instructions, they hallucinate instead.
 
 Better prompting doesn't solve this. The agent reinterprets prose instructions each session.
 
@@ -42,7 +37,6 @@ See [PATTERNS.md](PATTERNS.md) for detailed documentation of each pattern.
 
 **Output:**
 - [YouTube Channel](https://www.youtube.com/@bibliothecarius-modernus) — 200+ videos
-- [Blog](https://bibliothecarius-modernus.github.io) — Active readership
 - [Translation Corpus](https://github.com/wryan14/Latin-Patristic-Texts) — Open source translations
 
 **Whitepaper:** [DOI 10.5281/zenodo.18002473](https://doi.org/10.5281/zenodo.18002473)
@@ -52,7 +46,7 @@ See [PATTERNS.md](PATTERNS.md) for detailed documentation of each pattern.
 - Time per text: 30-60 minutes of agent work, 5-10 minutes human review
 - Failure rate since implementing patterns: Zero incomplete publications
 
-## Lessons Learned (The Hard Way)
+## Failures That Shaped These Patterns
 
 Each pattern exists because of a specific failure:
 
@@ -113,7 +107,3 @@ These are standard API integrations. The interesting part—and what's documente
 [CC0 1.0 Universal (Public Domain Dedication)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 Copy, modify, and use freely. No attribution required.
-
----
-
-*"The goal is not to make agents smarter. The goal is to make agent behavior predictable."*
