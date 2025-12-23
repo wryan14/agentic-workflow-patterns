@@ -1,0 +1,151 @@
+{
+  "_comment": "Example project state file showing the structure used to track workflow progress",
+
+  "project_id": "epistola-de-corpore-20251215",
+  "state": "VALIDATING",
+  "created_at": "2025-12-15T09:00:00Z",
+  "updated_at": "2025-12-15T11:45:00Z",
+
+  "source": {
+    "volume": "145",
+    "title_latin": "Epistola de Corpore et Sanguine Domini",
+    "title_english": "Letter on the Body and Blood of the Lord",
+    "author": "Ratramnus of Corbie",
+    "century": 9,
+    "estimated_words": 8500,
+    "estimated_duration_minutes": 28
+  },
+
+  "research": {
+    "completed_at": "2025-12-15T09:35:00Z",
+    "model": "openai/o4-mini-deep-research",
+    "cost_usd": 1.45,
+    "word_count": 2847,
+    "citations_count": 14,
+    "images": [
+      {
+        "url": "https://example.org/manuscript-image.jpg",
+        "description": "9th-century manuscript showing Eucharistic debate",
+        "license": "public domain",
+        "selected": true
+      }
+    ]
+  },
+
+  "translation": {
+    "completed_at": "2025-12-15T11:30:00Z",
+    "model": "anthropic/claude-sonnet-4",
+    "cost_usd": 3.21,
+    "word_count": 7200,
+    "chunk_count": 45,
+    "validation": {
+      "passed": null,
+      "checked_at": null,
+      "start_match": null,
+      "end_match": null,
+      "remaining_chars": null,
+      "remaining_pct": null
+    }
+  },
+
+  "audio": {
+    "completed_at": null,
+    "duration_seconds": null,
+    "file_size_bytes": null,
+    "cost_usd": 0
+  },
+
+  "video": {
+    "job_started_at": null,
+    "completed_at": null,
+    "file_size_bytes": null,
+    "last_size_check": null
+  },
+
+  "cover": {
+    "completed_at": null,
+    "prompt": null,
+    "cost_usd": 0
+  },
+
+  "thumbnail": {
+    "completed_at": null,
+    "text": null
+  },
+
+  "youtube": {
+    "video_id": null,
+    "uploaded_at": null,
+    "visibility": null,
+    "thumbnail_set": false,
+    "metadata": {
+      "title": null,
+      "description": null,
+      "tags": []
+    }
+  },
+
+  "archive_org": {
+    "identifier": null,
+    "uploaded_at": null,
+    "url": null
+  },
+
+  "github": {
+    "committed_at": null,
+    "url": null
+  },
+
+  "blog": {
+    "generated_at": null,
+    "url": null,
+    "listed": false,
+    "publish_date": null
+  },
+
+  "review": {
+    "presented_at": null,
+    "approved_at": null,
+    "approved_by": null,
+    "fixes_requested": []
+  },
+
+  "costs": {
+    "research_usd": 1.45,
+    "translation_usd": 3.21,
+    "audio_usd": 0,
+    "images_usd": 0,
+    "total_usd": 4.66
+  },
+
+  "notes": [
+    {
+      "timestamp": "2025-12-15T09:00:00Z",
+      "note": "Project created"
+    },
+    {
+      "timestamp": "2025-12-15T09:00:30Z",
+      "note": "State transition: SELECTING → RESEARCHING"
+    },
+    {
+      "timestamp": "2025-12-15T09:35:00Z",
+      "note": "Deep research completed: 2847 words, 14 citations"
+    },
+    {
+      "timestamp": "2025-12-15T09:35:15Z",
+      "note": "State transition: RESEARCHING → TRANSLATING"
+    },
+    {
+      "timestamp": "2025-12-15T11:30:00Z",
+      "note": "Translation completed: 45 chunks, 7200 words"
+    },
+    {
+      "timestamp": "2025-12-15T11:30:10Z",
+      "note": "State transition: TRANSLATING → VALIDATING"
+    },
+    {
+      "timestamp": "2025-12-15T11:45:00Z",
+      "note": "Awaiting validation run"
+    }
+  ]
+}
